@@ -183,5 +183,5 @@ npm test
 
 ## 📄 License & Attributions
 
-* **Application Code:** Licensed under the [MIT License](file:///c:/Users/ashfi/Downloads/prelegal/LICENSE). Copyright © 2026 ashfin prem.
+* **Application Code:** Licensed under the [MIT License]. Copyright © 2026 ashfin prem.
 * **Legal Agreement Frameworks:** Standard contract terms are created by [Common Paper](https://commonpaper.com) and licensed under the [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
