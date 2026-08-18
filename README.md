@@ -172,7 +172,7 @@ npm test
 
 | Variable | Description | Default / Example |
 | :--- | :--- | :--- |
-| `OPENROUTER_API_KEY` | OpenRouter API Key for AI extraction. | `sk-or-v1-...` |
+| `OPENROUTER_API_KEY` | OpenRouter API Key for AI extraction. | `...` |
 | `OPENROUTER_MODEL` | Primary model identifier. | `openrouter/openai/gpt-oss-20b:free` |
 | `SECRET_KEY` | JWT token signature secret (64+ chars in prod). | `dev-secret-key-change-in-production` |
 | `ENVIRONMENT` | Deployment mode (`development`, `production`). | `development` |
