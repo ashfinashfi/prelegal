@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+:root {
+  --washi-bg: #f5f2eb;
+  --washi-surface: #fdfbf7;
+  --washi-card: #f9f6f0;
+  --stone-border: #e4ded3;
+  --stone-subtle: #ece6dc;
+  
+  --sumi-ink: #1c1b18;
+  --charcoal-tea: #36332e;
+  --linen-gray: #6e695f;
+  --muted-sand: #968f83;
+  
+  --persimmon: #c85a38;
+  --persimmon-soft: #fbf0ec;
+  --moss-emerald: #31533d;
+  --moss-soft: #eff5f1;
+  --fired-indigo: #1f2d3d;
+  --earthen-clay: #996e47;
+}
+
+body {
+  background-color: var(--washi-bg);
+  color: var(--sumi-ink);
+  font-family: var(--font-sans), system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-image: 
+    radial-gradient(circle at 100% 0%, rgba(200, 90, 56, 0.03) 0%, transparent 40%),
+    radial-gradient(circle at 0% 100%, rgba(49, 83, 61, 0.03) 0%, transparent 40%);
+}
+
+.font-serif {
+  font-family: var(--font-serif), 'Cormorant Garamond', Georgia, serif;
+}
+
+/* Wabi-Sabi Tactile Paper */
+.japandi-paper {
+  background: var(--washi-surface);
+  border: 1px solid var(--stone-border);
+  box-shadow: 
+    0 1px 2px rgba(28, 27, 24, 0.03),
+    0 8px 32px -8px rgba(28, 27, 24, 0.05);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.japandi-paper:hover {
+  box-shadow: 
+    0 2px 4px rgba(28, 27, 24, 0.04),
+    0 16px 40px -12px rgba(28, 27, 24, 0.08);
+}
+
+/* Studio Atelier Panels */
+.atelier-panel {
+  background: var(--washi-surface);
+  border: 1px solid var(--stone-border);
+  border-radius: 1.25rem;
+}
+
+/* Traditional Hanko Vermilion Seal */
+.hanko-seal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #c85a38;
+  color: #c85a38;
+  font-family: var(--font-serif), serif;
+  font-weight: 700;
+  border-radius: 0.375rem;
+  letter-spacing: 0.05em;
+  padding: 0.15rem 0.4rem;
+  font-size: 0.7rem;
+  background-color: rgba(200, 90, 56, 0.04);
+}
+
+/* Field highlight with subtle clay warmth */
+.field-highlight {
+  background-color: #f7ede2;
+  color: #8c4c28;
+  padding: 0.1rem 0.35rem;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  border-bottom: 1.5px solid #c85a38;
+}
+
+/* Micro-transitions */
+* {
+  transition-property: color, background-color, border-color, box-shadow, transform;
+  transition-duration: 180ms;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Custom Sand & Bamboo Scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d8d0c2;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b5ac9a;
+}
